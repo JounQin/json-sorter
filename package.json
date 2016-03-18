@@ -1,7 +1,7 @@
 {
   "name": "json-sorter",
-  "version": "1.0.0",
-  "description": "Extracting a sorted result from a given JSON object and stringify with JSON3.",
+  "version": "2.0.0",
+  "description": "Extracting a sorted result from a given JSON object or array and stringify with JSON3.",
   "main": "index.js",
   "scripts": {
     "test": "node test"
@@ -22,6 +22,7 @@
   },
   "homepage": "https://github.com/JounQin/json-sorter#readme",
   "dependencies": {
-    "json3": "^3.3.2"
+    "json3": "^3.3.2",
+    "underscore": "^1.8.3"
   }
 }

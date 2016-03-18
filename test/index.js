@@ -1,5 +1,6 @@
 'use strict';
 
+const _ = require('underscore');
 const jsonSorter = require('..');
 
 console.log('it should return key-sorted json strings');
@@ -56,4 +57,15 @@ console.log('\nmore complex object with user-defined sort-function:\n',
         b: 4
     }, function (x, y) {
         return x < y
+    }));
+
+console.log('\ncomplex array and object json:\n',
+    jsonSorter([{key: 1}, {key: 3}, {key: 2}, {key: {c: 1, d: 2, a: 3, b: 4}}], {
+        compare: function (x, y) {
+            if (_.isObject(x)) {
+                return x.key < y.key;
+            }
+
+            return x < y;
+        }
     }));
