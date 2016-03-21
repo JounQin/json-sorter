@@ -1,6 +1,6 @@
 {
   "name": "json-sorter",
-  "version": "2.0.0",
+  "version": "2.1.0",
   "description": "Extracting a sorted result from a given JSON object or array and stringify with JSON3.",
   "main": "index.js",
   "scripts": {

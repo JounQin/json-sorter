@@ -69,3 +69,16 @@ console.log('\ncomplex array and object json:\n',
             return x < y;
         }
     }));
+
+
+const json = '{"x":[{"b":"[5,3,1,4,2]"}]}';
+
+console.log('------------------------------------------------------');
+
+let result = jsonSorter(json, {
+    stringify: false
+});
+
+console.log('first:', result);
+console.log('type:', typeof result);
+console.log(result.x[0].b);
