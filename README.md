@@ -1,4 +1,6 @@
 # json-sorter
+
+[![Greenkeeper badge](https://badges.greenkeeper.io/JounQin/json-sorter.svg)](https://greenkeeper.io/)
 Extracting a sorted result from a given JSON object or array even string, parse and stringify with [JSON3](https://github.com/bestiejs/json3).
 
 # Usage
